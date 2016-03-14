@@ -7,11 +7,18 @@ $stable:                          #f8f8f8 !default;
 $positive:                        #387ef5 !default;
 $calm:                            #11c1f3 !default;
 $balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
+$energized:                       #f1d47d !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
-$dark:                            #444 !default;
-
+$dark:                            #605a5a !default;
+$c-light-brown:                   #f1d47d !default;
+$c-dark-brown:                    #8a6b1f !default;
+$c-light-red:                     #e67f76 !default;
+$c-dark-red:                      #b43f3f !default;
+$c-light-black:                   #605a5a !default;
+$c-dark-black:                    #282828 !default;
+$c-light-orange:                  #e8bb81 !default;
+$c-dark-orange:                   #a77a44 !default;
 
 // Base
 // -------------------------------
@@ -78,7 +85,7 @@ $button-height:                   42px !default;
 $button-padding:                  12px !default;
 $button-icon-size:                24px !default;
 
-$button-large-font-size:          20px !default;
+$button-large-font-size:          24px !default;
 $button-large-height:             54px !default;
 $button-large-padding:            16px !default;
 $button-large-icon-size:          32px !default;
@@ -104,6 +111,55 @@ $button-stable-text:              #444 !default;
 $button-stable-border:            #b2b2b2 !default;
 $button-stable-active-bg:         #e5e5e5 !default;
 $button-stable-active-border:     #a2a2a2 !default;
+
+$button-light-brown-bg:           $c-light-brown !default;
+$button-light-brown-text:         #fff !default;
+$button-light-brown-border:       darken($c-light-brown, 10%) !default;
+$button-light-brown-active-bg:    darken($c-light-brown, 10%) !default;
+$button-light-brown-active-border:darken($c-light-brown, 10%) !default;
+
+$button-dark-brown-bg:            $c-dark-brown !default;
+$button-dark-brown-text:          #fff !default;
+$button-dark-brown-border:        darken($c-dark-brown, 10%) !default;
+$button-dark-brown-active-bg:     darken($c-dark-brown, 10%) !default;
+$button-dark-brown-active-border: darken($c-dark-brown, 10%) !default;
+
+
+$button-light-red-bg:             $c-light-red !default;
+$button-light-red-text:           #fff !default;
+$button-light-red-border:         darken($c-light-red, 10%) !default;
+$button-light-red-active-bg:      darken($c-light-red, 10%) !default;
+$button-light-red-active-border:  darken($c-light-red, 10%) !default;
+
+$button-dark-red-bg:              $c-dark-red !default;
+$button-dark-red-text:            #fff !default;
+$button-dark-red-border:          darken($c-dark-red, 10%) !default;
+$button-dark-red-active-bg:       darken($c-dark-red, 10%) !default;
+$button-dark-red-active-border:   darken($c-dark-red, 10%) !default;
+
+$button-light-black-bg:           $c-light-black !default;
+$button-light-black-text:         #fff !default;
+$button-light-black-border:       darken($c-light-black, 10%) !default;
+$button-light-black-active-bg:    darken($c-light-black, 10%) !default;
+$button-light-black-active-border:darken($c-light-black, 10%) !default;
+
+$button-dark-black-bg:            $c-dark-black !default;
+$button-dark-black-text:          #fff !default;
+$button-dark-black-border:        darken($c-dark-black, 10%) !default;
+$button-dark-black-active-bg:     darken($c-dark-black, 10%) !default;
+$button-dark-black-active-border: darken($c-dark-black, 10%) !default;
+
+$button-light-orange-bg:           $c-light-orange !default;
+$button-light-orange-text:         #fff !default;
+$button-light-orange-border:       darken($c-light-orange, 10%) !default;
+$button-light-orange-active-bg:    darken($c-light-orange, 10%) !default;
+$button-light-orange-active-border:darken($c-light-orange, 10%) !default;
+
+$button-dark-orange-bg:           $c-dark-orange !default;
+$button-dark-orange-text:         #fff !default;
+$button-dark-orange-border:       darken($c-dark-orange, 10%) !default;
+$button-dark-orange-active-bg:    darken($c-dark-orange, 10%) !default;
+$button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 
 $button-positive-bg:              $positive !default;
 $button-positive-text:            #fff !default;

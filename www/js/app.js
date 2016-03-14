@@ -88,10 +88,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
      .state('app.mynotes', {
-      url: '/Notes',
+      url: '/notes',
       views: {
         'menuContent': {
-          templateUrl: 'templates/Mynotes.html'
+          templateUrl: 'templates/notes.html'
           //controler
         }
       }

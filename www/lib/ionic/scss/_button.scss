@@ -24,7 +24,7 @@
   text-align: center;
 
   text-overflow: ellipsis;
-  font-size: $button-font-size;
+  font-size: $button-large-font-size;
   line-height: $button-height - $button-border-width + 1px;
 
   cursor: pointer;
@@ -69,6 +69,54 @@
   &.button-block, &.button-full {
     margin-top: $button-block-margin;
     margin-bottom: $button-block-margin;
+  }
+
+  &.button-light-brown{
+    @include button-style($button-light-brown-bg, $button-light-black-border, $button-light-brown-bg, $button-light-brown-border, $button-light-brown-text);
+    @include button-clear($button-light-brown-border);
+    @include button-outline($button-light-brown-border);
+  }
+
+  &.button-dark-brown{
+    @include button-style($button-dark-brown-bg, $button-dark-brown-border, $button-dark-brown-bg, $button-dark-brown-border, $button-dark-brown-text);
+    @include button-clear($button-dark-brown-border);
+    @include button-outline($button-dark-brown-border);
+  }
+
+  &.button-light-red{
+    @include button-style($button-light-red-bg, $button-light-red-border, $button-light-red-bg, $button-light-red-border, $button-light-red-text);
+    @include button-clear($button-light-red-border);
+    @include button-outline($button-light-red-border);
+  }
+
+  &.button-dark-red{
+    @include button-style($button-dark-red-bg, $button-dark-red-border, $button-dark-red-bg, $button-dark-red-border, $button-dark-red-text);
+    @include button-clear($button-dark-red-border);
+    @include button-outline($button-dark-red-border);
+  }
+
+  &.button-light-black{
+    @include button-style($button-light-black-bg, $button-light-black-border, $button-light-black-bg, $button-light-black-border, $button-light-black-text);
+    @include button-clear($button-light-black-border);
+    @include button-outline($button-light-black-border);
+  }
+
+  &.button-dark-black{
+    @include button-style($button-dark-black-bg, $button-dark-black-border, $button-dark-black-bg, $button-dark-black-border, $button-dark-black-text);
+    @include button-clear($button-dark-black-border);
+    @include button-outline($button-dark-black-border);
+  }
+
+  &.button-light-orange{
+    @include button-style($button-light-orange-bg, $button-light-orange-border, $button-light-orange-bg, $button-light-orange-border, $button-light-orange-text);
+    @include button-clear($button-light-orange-border);
+    @include button-outline($button-light-orange-border);
+  }
+
+  &.button-dark-orange{
+    @include button-style($button-dark-orange-bg, $button-dark-orange-border, $button-dark-orange-bg, $button-dark-orange-border, $button-dark-orange-text);
+    @include button-clear($button-dark-orange-border);
+    @include button-outline($button-dark-orange-border);
   }
 
   &.button-light {

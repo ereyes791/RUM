@@ -5,31 +5,26 @@ p { text-align: center }
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-     }
-   .info{
-   	background-color: black;
+    padding-top: 15px;
+    opacity: 0.5;
+    position: absolute;
 
-     }
-
-   [nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
-    background: #FFC900;
-}
+    }
 
 .avatar{
- 	display: block;
+ 	  display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50px;
+    border-radius: 60px;
     width: 25%
 }
 .menu .scroll-content {
     z-index: 10;
-    background-color: #444444;
+    background-color: ;
 }
 .menu .bar-header {
     z-index: 11;
-    background-color: #FFC900;
+    background-color: transparent;
 }
 .item-select {
     border-color: transparent;
