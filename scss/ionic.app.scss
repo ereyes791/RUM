@@ -15,9 +15,103 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$c-light-brown:                   #d9c27c !default;
+$c-dark-brown:                    #a7883a !default;
+$c-light-red:                     #e67f76 !default;
+$c-dark-red:                      #b43f3f !default;
+$c-light-black:                   #797474 !default;
+$c-dark-black:                    #282828 !default;
+$c-light-orange:                  #ecbf85 !default;
+$c-dark-orange:                   #d58b4f !default;
+
+// ------------ Buttons -------------
+// ----------------------------------
+
+$button-light-brown-bg:           $c-light-brown !default;
+$button-light-brown-text:         #fff !default;
+$button-light-brown-border:       darken($c-light-brown, 10%) !default;
+$button-light-brown-active-bg:    darken($c-light-brown, 10%) !default;
+$button-light-brown-active-border:darken($c-light-brown, 10%) !default;
+
+$button-dark-brown-bg:            $c-dark-brown !default;
+$button-dark-brown-text:          #fff !default;
+$button-dark-brown-border:        darken($c-dark-brown, 10%) !default;
+$button-dark-brown-active-bg:     darken($c-dark-brown, 10%) !default;
+$button-dark-brown-active-border: darken($c-dark-brown, 10%) !default;
+
+
+$button-light-red-bg:             $c-light-red !default;
+$button-light-red-text:           #fff !default;
+$button-light-red-border:         darken($c-light-red, 10%) !default;
+$button-light-red-active-bg:      darken($c-light-red, 10%) !default;
+$button-light-red-active-border:  darken($c-light-red, 10%) !default;
+
+$button-dark-red-bg:              $c-dark-red !default;
+$button-dark-red-text:            #fff !default;
+$button-dark-red-border:          darken($c-dark-red, 10%) !default;
+$button-dark-red-active-bg:       darken($c-dark-red, 10%) !default;
+$button-dark-red-active-border:   darken($c-dark-red, 10%) !default;
+
+$button-light-black-bg:           $c-light-black !default;
+$button-light-black-text:         #fff !default;
+$button-light-black-border:       darken($c-light-black, 10%) !default;
+$button-light-black-active-bg:    darken($c-light-black, 10%) !default;
+$button-light-black-active-border:darken($c-light-black, 10%) !default;
+
+$button-dark-black-bg:            $c-dark-black !default;
+$button-dark-black-text:          #fff !default;
+$button-dark-black-border:        darken($c-dark-black, 10%) !default;
+$button-dark-black-active-bg:     darken($c-dark-black, 10%) !default;
+$button-dark-black-active-border: darken($c-dark-black, 10%) !default;
+
+$button-light-orange-bg:           $c-light-orange !default;
+$button-light-orange-text:         #fff !default;
+$button-light-orange-border:       darken($c-light-orange, 10%) !default;
+$button-light-orange-active-bg:    darken($c-light-orange, 10%) !default;
+$button-light-orange-active-border:darken($c-light-orange, 10%) !default;
+
+$button-dark-orange-bg:           $c-dark-orange !default;
+$button-dark-orange-text:         #fff !default;
+$button-dark-orange-border:       darken($c-dark-orange, 10%) !default;
+$button-dark-orange-active-bg:    darken($c-dark-orange, 10%) !default;
+$button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
+
+// ------------ Logo ----------------
+// ----------------------------------
+
+.logo{
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    opacity: 0.5;
+    width: 50%;
+    height: 50%;
+}
+
+.page-light-red{
+    background-color: $c-light-red;
+    background: $c-light-red;
+}
+
+.page-light-orange{
+  background-color: $c-light-orange;
+  background: $c-light-orange;
+}
+
+.page-light-black{
+  background-color: $c-light-black;
+  background: $c-light-black;
+}
+
+.page-light-brown{
+  background-color: $c-light-brown;
+  background: $c-light-brown;
+}
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-

@@ -72,7 +72,7 @@
   }
 
   &.button-light-brown{
-    @include button-style($button-light-brown-bg, $button-light-black-border, $button-light-brown-bg, $button-light-brown-border, $button-light-brown-text);
+    @include button-style($button-light-brown-bg, $button-light-brown-border, $button-light-brown-bg, $button-light-brown-border, $button-light-brown-text);
     @include button-clear($button-light-brown-border);
     @include button-outline($button-light-brown-border);
   }

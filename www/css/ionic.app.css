@@ -15,6 +15,32 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+.logo {
+  position: static;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  opacity: 0.5;
+  width: 50%;
+  height: 50%; }
+
+.page-light-red {
+  background-color: #e67f76;
+  background: #e67f76; }
+
+.page-light-orange {
+  background-color: #ecbf85;
+  background: #ecbf85; }
+
+.page-light-black {
+  background-color: #797474;
+  background: #797474; }
+
+.page-light-brown {
+  background-color: #d9c27c;
+  background: #d9c27c; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -8533,7 +8559,7 @@ progress {
   vertical-align: top;
   text-align: center;
   text-overflow: ellipsis;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 42px;
   cursor: pointer; }
   .button:hover {
@@ -8571,52 +8597,52 @@ progress {
     margin-bottom: 10px; }
   .button.button-light-brown {
     border-color: transparent;
-    background-color: #f1d47d;
+    background-color: #d9c27c;
     color: #fff; }
     .button.button-light-brown:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-light-brown.active, .button.button-light-brown.activated {
-      background-color: #f1d47d; }
+      background-color: #d9c27c; }
     .button.button-light-brown.button-clear {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #ecc54f; }
+      color: #ceb054; }
     .button.button-light-brown.button-icon {
       border-color: transparent;
       background: none; }
     .button.button-light-brown.button-outline {
-      border-color: #ecc54f;
+      border-color: #ceb054;
       background: transparent;
-      color: #ecc54f; }
+      color: #ceb054; }
       .button.button-light-brown.button-outline.active, .button.button-light-brown.button-outline.activated {
-        background-color: #ecc54f;
+        background-color: #ceb054;
         box-shadow: none;
         color: #fff; }
   .button.button-dark-brown {
     border-color: transparent;
-    background-color: #8a6b1f;
+    background-color: #a7883a;
     color: #fff; }
     .button.button-dark-brown:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-dark-brown.active, .button.button-dark-brown.activated {
-      background-color: #8a6b1f; }
+      background-color: #a7883a; }
     .button.button-dark-brown.button-clear {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #604b16; }
+      color: #81692d; }
     .button.button-dark-brown.button-icon {
       border-color: transparent;
       background: none; }
     .button.button-dark-brown.button-outline {
-      border-color: #604b16;
+      border-color: #81692d;
       background: transparent;
-      color: #604b16; }
+      color: #81692d; }
       .button.button-dark-brown.button-outline.active, .button.button-dark-brown.button-outline.activated {
-        background-color: #604b16;
+        background-color: #81692d;
         box-shadow: none;
         color: #fff; }
   .button.button-light-red {
@@ -8671,27 +8697,27 @@ progress {
         color: #fff; }
   .button.button-light-black {
     border-color: transparent;
-    background-color: #605a5a;
+    background-color: #797474;
     color: #fff; }
     .button.button-light-black:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-light-black.active, .button.button-light-black.activated {
-      background-color: #605a5a; }
+      background-color: #797474; }
     .button.button-light-black.button-clear {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #464141; }
+      color: #5f5b5b; }
     .button.button-light-black.button-icon {
       border-color: transparent;
       background: none; }
     .button.button-light-black.button-outline {
-      border-color: #464141;
+      border-color: #5f5b5b;
       background: transparent;
-      color: #464141; }
+      color: #5f5b5b; }
       .button.button-light-black.button-outline.active, .button.button-light-black.button-outline.activated {
-        background-color: #464141;
+        background-color: #5f5b5b;
         box-shadow: none;
         color: #fff; }
   .button.button-dark-black {
@@ -8721,52 +8747,52 @@ progress {
         color: #fff; }
   .button.button-light-orange {
     border-color: transparent;
-    background-color: #e8bb81;
+    background-color: #ecbf85;
     color: #fff; }
     .button.button-light-orange:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-light-orange.active, .button.button-light-orange.activated {
-      background-color: #e8bb81; }
+      background-color: #ecbf85; }
     .button.button-light-orange.button-clear {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #e0a456; }
+      color: #e5a859; }
     .button.button-light-orange.button-icon {
       border-color: transparent;
       background: none; }
     .button.button-light-orange.button-outline {
-      border-color: #e0a456;
+      border-color: #e5a859;
       background: transparent;
-      color: #e0a456; }
+      color: #e5a859; }
       .button.button-light-orange.button-outline.active, .button.button-light-orange.button-outline.activated {
-        background-color: #e0a456;
+        background-color: #e5a859;
         box-shadow: none;
         color: #fff; }
   .button.button-dark-orange {
     border-color: transparent;
-    background-color: #a77a44;
+    background-color: #d58b4f;
     color: #fff; }
     .button.button-dark-orange:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-dark-orange.active, .button.button-dark-orange.activated {
-      background-color: #a77a44; }
+      background-color: #d58b4f; }
     .button.button-dark-orange.button-clear {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #836035; }
+      color: #c3712e; }
     .button.button-dark-orange.button-icon {
       border-color: transparent;
       background: none; }
     .button.button-dark-orange.button-outline {
-      border-color: #836035;
+      border-color: #c3712e;
       background: transparent;
-      color: #836035; }
+      color: #c3712e; }
       .button.button-dark-orange.button-outline.active, .button.button-dark-orange.button-outline.activated {
-        background-color: #836035;
+        background-color: #c3712e;
         box-shadow: none;
         color: #fff; }
   .button.button-light {
@@ -9007,15 +9033,15 @@ progress {
     margin-top: 3px; }
 
 .button-large {
-  padding: 0 16px;
-  min-width: 72px;
-  min-height: 59px;
-  font-size: 24px;
-  line-height: 53px; }
+  padding: 0 10px;
+  min-width: 56px;
+  min-height: 69px;
+  font-size: 26px;
+  line-height: 63px; }
   .button-large .icon:before, .button-large.icon:before, .button-large.icon-left:before, .button-large.icon-right:before {
     padding-bottom: 2px;
     font-size: 32px;
-    line-height: 51px; }
+    line-height: 61px; }
 
 .button-icon {
   -webkit-transition: opacity 0.1s;

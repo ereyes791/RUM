@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-            .state('app.smell', {
+        .state('app.smell', {
       url: '/smell',
       views: {
         'menuContent': {
@@ -78,11 +78,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-     .state('app.resumen', {
-      url: '/resumen',
+     .state('app.review', {
+      url: '/review',
       views: {
         'menuContent': {
-          templateUrl: 'templates/resumen.html'
+          templateUrl: 'templates/review.html'
           //controler
         }
       }

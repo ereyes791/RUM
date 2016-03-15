@@ -1,16 +1,6 @@
 /* Empty. Add your own CSS if you like */
 p { text-align: center }
 
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-    opacity: 0.5;
-    position: absolute;
-
-    }
-
 .avatar{
  	  display: block;
     margin-left: auto;
