@@ -3,6 +3,9 @@
     <ion-radio ng-model="choice" ng-value="'A'">Red</ion-radio>
     <ion-radio ng-model="choice" ng-value="'B'">white</ion-radio>
     <ion-radio ng-model="choice" ng-value="'C'">Caramel</ion-radio>
+    <div  ng-repeat="test in taste">
+                   <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
+    </div>
 
   <a class="button button-full button-light-brown" href="#app/review">
   		FINISH

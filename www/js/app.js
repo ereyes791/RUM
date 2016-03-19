@@ -45,8 +45,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/info',
       views: {
         'menuContent': {
-          templateUrl: 'templates/info.html'
-          //controler
+          templateUrl: 'templates/info.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
@@ -54,8 +54,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/color',
       views: {
         'menuContent': {
-          templateUrl: 'templates/color.html'
-          //controler
+          templateUrl: 'templates/color.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
@@ -63,8 +63,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/smell',
       views: {
         'menuContent': {
-          templateUrl: 'templates/smell.html'
-          //controler
+          templateUrl: 'templates/smell.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
@@ -73,8 +73,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/taste',
       views: {
         'menuContent': {
-          templateUrl: 'templates/taste.html'
-          //controler
+          templateUrl: 'templates/taste.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
@@ -82,8 +82,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/review',
       views: {
         'menuContent': {
-          templateUrl: 'templates/review.html'
-          //controler
+          templateUrl: 'templates/review.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
