@@ -41,6 +41,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.discover', {
+      url: "/discover",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/discover.html",
+          controller: 'tasteNotecontroller'
+        }
+      }
+    })
     .state('app.info', {
       url: '/info',
       views: {

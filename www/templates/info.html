@@ -8,11 +8,9 @@
       <div class="input-label">
       BRAND
       </div>
-      <select>
+      <select ng-model="note.brand">
         <option selected>--BRAND--</option>
-        <option>Santa Teresa</option>
-        <option>Ocumare</option>
-        <option>Carupano</option>
+        <option  ng-repeat="rumName in rum" >{{rumName.brand}}</option>
       </select>
       </label>
 
@@ -21,11 +19,12 @@
       <div class="input-label">
       NAME
       </div>
-      <select>
+      <select ng-model="note.name" >
         <option selected>--NAME--</option>
-        <option>Gran Reserva</option>
-        <option>Carta Roja</option>
-        <option>La botella de Ron</option>
+          <option  ng-repeat="rumName in rum" >{{rumName.name}}</option>
+
+
+
       </select>
     </label>
 
@@ -34,11 +33,9 @@
       <div class="input-label">
       YEAR
       </div>
-      <select>
+      <select ng-model="note.year">
         <option selected>--YEAR--</option>
-        <option>1922</option>
-        <option>1992</option>
-        <option>1980</option>
+        <option  ng-repeat="rumName in rum" >{{rumName.age}}</option>
       </select>
     </label>
 

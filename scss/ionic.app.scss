@@ -27,6 +27,16 @@ $c-dark-black:                    #282828 !default;
 $c-light-orange:                  #ecbf85 !default;
 $c-dark-orange:                   #d58b4f !default;
 
+$r-clean:                         #f5f3f8 !default;
+$r-silver:                        #eff4f2 !default;
+$r-gold:                          #ea9c1e !default;
+$r-sandy-gold:                    #d6ac48 !default;
+$r-amber:                         #ffbf00 !default;
+$r-saddle-brown:                  #762e06 !default;
+$r-firebrick:                     #b21802 !default;
+$r-sienna:                        #805c44 !default;
+
+
 // ------------ Button --------------
 // ----------------------------------
 
@@ -125,6 +135,19 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   text-transform: capitalize;
   padding: 10px;
 }
+
+// ------------ Icon ----------------
+// ----------------------------------
+
+.color-icon{
+  size: content;
+  position: absolute;
+  &.clear{
+    background: url(C://)
+  }
+}
+
+
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;

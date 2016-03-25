@@ -48,6 +48,12 @@ $dark:                            #444 !default;
   text-transform: capitalize;
   padding: 10px; }
 
+.color-icon {
+  size: content;
+  position: absolute; }
+  .color-icon.clear {
+    background: url(C://); }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/

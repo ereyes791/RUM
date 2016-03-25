@@ -6,7 +6,23 @@
     </div>
     <div  ng-repeat="test in smell">
       <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
+            <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="smels">
+        </label>
+        </div>
+    <div ng-show='false' ng-repeat="test in smell">
+                   <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
     </div>
+    <div class="list">
+  <div class="item range range-positive">
+    <i class="icon ion-minus-circled"></i>
+    <input type="range" name="volume" min="0" max="4" value="2">
+    <i class="icon ion-plus-circled"></i>
+  </div>
+</div>
+
 
   <a class="button button-full button-light-orange" href="#/app/taste">
   		CONTINUE
