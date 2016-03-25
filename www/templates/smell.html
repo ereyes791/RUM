@@ -1,10 +1,11 @@
 <ion-view view-title="SMELL" style="page-light-black">
   <ion-content>
-    <ion-radio ng-model="choice" ng-value="'A'">Red</ion-radio>
-    <ion-radio ng-model="choice" ng-value="'B'">white</ion-radio>
-    <ion-radio ng-model="choice" ng-value="'C'">Caramel</ion-radio>
+    <div>
+    <input type=search>
+    </input>
+    </div>
     <div  ng-repeat="test in smell">
-                   <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
+      <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
     </div>
 
   <a class="button button-full button-light-orange" href="#/app/taste">
@@ -12,6 +13,9 @@
   </a>
   <a class="button button-full button-light-red" href="#/app/smell">
       HELP
+  </a>
+  <a class="button button-full button-light-black" href="#/app/color">
+      RETURN
   </a>
   </ion-content>
 </ion-view>

@@ -41,6 +41,13 @@ $dark:                            #444 !default;
   background-color: #d9c27c;
   background: #d9c27c; }
 
+.review {
+  text-align: center;
+  font-size: 20px;
+  color: #282828;
+  text-transform: capitalize;
+  padding: 10px; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
