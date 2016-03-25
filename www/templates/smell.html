@@ -1,12 +1,14 @@
 <ion-view view-title="SMELL" style="page-light-black">
   <ion-content>
-            <div class="list list-inset">
-        <label class="item item-input">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="text" placeholder="Search" ng-model="smels">
+            <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+        <input type="text" placeholder="Smell" ng-model="checked">
         </label>
+        <button class="button button-small">
+        Submit
+        </button>
         </div>
-    <div ng-show='false' ng-repeat="test in smell">
+    <div ng-show='true' ng-repeat="test in smells">
                    <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
     </div>
     <div class="list">

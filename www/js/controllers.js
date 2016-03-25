@@ -62,6 +62,8 @@ ctrl.controller('tasteNotecontroller', function($scope, dataService) {
     });
     $scope.smell = dataService.getSmell(function(dataResponse) {
         $scope.smell = dataResponse;
+        $scope.smells=$scope.purge($scope.smell);
+        console.log($scope.smells);
 
     });
     $scope.taste = dataService.getTaste(function(dataResponse) {
@@ -73,9 +75,18 @@ ctrl.controller('tasteNotecontroller', function($scope, dataService) {
 
 
     });
-    $scope.purge=function($scope,data){
+    $scope.checked
+    $scope.purge=function(smell){
+      console.log(smell);
+      console.log(word);
+    var array =[];
+      for (var i = 0; i <smell.length; i++) {
+        if(smell[i].name==$scope.checked || smell[i].category==$scope.checked){
+          array.push(smell[i]);
+        }
 
-
+      }
+      return array;
     };
 
 
