@@ -1,35 +1,10 @@
 'use strict';
 var  ctrl=angular.module('starter.controllers', ['ionic'])
-ctrl.controller('MyController', function($scope, $ionicModal) {
-  $ionicModal.fromTemplateUrl('my-modal.html', {
-    scope: $scope,
-    animation: 'slide-in-up'
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-  $scope.openModal = function() {
-    $scope.modal.show();
-  };
-  $scope.closeModal = function() {
-    $scope.modal.hide();
-  };
-  //Cleanup the modal when we're done with it!
-  $scope.$on('$destroy', function() {
-    $scope.modal.remove();
-  });
-  // Execute action on hide modal
-  $scope.$on('modal.hidden', function() {
-    // Execute action
-  });
-  // Execute action on remove modal
-  $scope.$on('modal.removed', function() {
-    // Execute action
-  });
-});
 
 ctrl.service('dataService', function($http) {
-this.getData = function(callbackFunc) {
+this.getColor = function(callbackFunc) {
   var color = 'color';
+
     $http({
 
         method: 'GET',
@@ -42,7 +17,7 @@ this.getData = function(callbackFunc) {
         alert("error");
     });
  }
- this.getData2 = function(callbackFunc) {
+ this.getSmell = function(callbackFunc) {
      $http({
          method: 'GET',
          url: 'https://rum-backend-db.herokuapp.com/smell'
@@ -53,7 +28,7 @@ this.getData = function(callbackFunc) {
          alert("error");
      });
   }
-  this.getData3 = function(callbackFunc) {
+  this.getTaste = function(callbackFunc) {
       $http({
           method: 'GET',
           url: 'https://rum-backend-db.herokuapp.com/taste'
@@ -64,13 +39,15 @@ this.getData = function(callbackFunc) {
           alert("error");
       });
    }
-   this.getData4 = function(callbackFunc) {
+   this.getRum = function(callbackFunc) {
        $http({
            method: 'GET',
            url: 'https://rum-backend-db.herokuapp.com/rum'
         }).success(function(data){
            // With the data succesfully returned, call our callback
            callbackFunc(data);
+           console.log(data);
+
        }).error(function(){
            alert("error");
        });
@@ -78,23 +55,30 @@ this.getData = function(callbackFunc) {
 });
 
 ctrl.controller('tasteNotecontroller', function($scope, dataService) {
-
-    $scope.color = dataService.getData(function(dataResponse) {
+    $scope.smels = '1';
+    $scope.color = dataService.getColor(function(dataResponse) {
         $scope.color = dataResponse;
 
     });
-    $scope.smell = dataService.getData2(function(dataResponse) {
+    $scope.smell = dataService.getSmell(function(dataResponse) {
         $scope.smell = dataResponse;
 
     });
-    $scope.taste = dataService.getData3(function(dataResponse) {
+    $scope.taste = dataService.getTaste(function(dataResponse) {
         $scope.taste = dataResponse;
 
     });
-    $scope.rum = dataService.getData4(function(dataResponse) {
+    $scope.rum = dataService.getRum(function(dataResponse) {
         $scope.rum = dataResponse;
 
+
     });
+    $scope.purge=function($scope,data){
+
+
+    };
+
+
 });
 
 

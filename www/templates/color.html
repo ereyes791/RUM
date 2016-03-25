@@ -1,8 +1,5 @@
 <ion-view view-title="COLOR">
   <ion-content>
-    <ion-radio ng-model="choice" ng-value="'A'">Red</ion-radio>
-    <ion-radio ng-model="choice" ng-value="'B'">Pretty</ion-radio>
-    <ion-radio ng-model="choice" ng-value="'C'">Caramel</ion-radio>
     <div  ng-repeat="test in color">
                    <ion-radio ng-model="settings.id" ng-value="test.id">{{test.name}}</ion-radio>
     </div>
