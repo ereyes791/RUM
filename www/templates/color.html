@@ -1,6 +1,8 @@
 <ion-view view-title="COLOR">
   <ion-content>
-      <ion-radio ng-repeat="test in color" ng-value="test.id" ng-model="note.color">{{test.name}}</ion-radio>
+      <ion-radio ng-repeat="test in color" ng-value="test.id" ng-model="note.color">
+          <div class="color-icon {{test.name}}"></div>
+        </ion-radio>
 
     <!--Buttons-->
     <a class="button button-full button-light-orange" href="#/app/smell">
