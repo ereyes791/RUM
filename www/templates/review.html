@@ -1,26 +1,18 @@
 <ion-view view-title="REVIEW">
   <ion-content class="has-header" >
-<div class="list card">
-  <div class="item item-body">
-      <div class="review">Brand: {{note.brand}}</div>
-      <div class="review">Name: {{note.rumName}}</div>
-      <div class="review">Year: {{note.age}}</div>
+        <div class="review">Brand: {{note.brand}}</div>
+        <div class="review">Name: {{note.rumName}}</div>
+        <div class="review">Year: {{note.age}}</div>
         <div class="review">Color: {{color[note.color-1].name}}</div>
-          <div class="review">Smell: {{smell[note.smell-1].name}}</div>
-            <div class="review">Taste: {{taste[note.taste-1].name}}</div>
-  </div>
-  <div class="item item-body">
-      <div class="color-icon"></a>
-  </div>
-</div>
+        <div class="color-icon firebrick"></div>
+        <div class="review">Smell: {{smell[note.smell-1].name}}</div>
+        <div class="review">Taste: {{taste[note.taste-1].name}}</div>
 
-
-  <a class="button button-full button-light-red" href="#saas"
-  ng-click="postNote(getID(note.rumName,rum),note.taste,note.smell,note.color)">
-  		THAT'S PERFECT!
-  </a>
-  <a class="button button-full button-light-black" href="#/app/info">
-      ALL WRONG! LET ME TRY AGAIN
-  </a>
+<a class="button button-full button-light-red" href="#saas" ng-click="postNote(getID(note.rumName,rum),note.taste,note.smell,note.color)">
+  THAT'S PERFECT!
+</a>
+<a class="button button-full button-light-black" href="#/app/info">
+  ALL WRONG! LET ME TRY AGAIN
+</a>
   </ion-content>
 </ion-view>

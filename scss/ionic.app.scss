@@ -130,24 +130,82 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 
 .review{
   text-align: center;
+  margin : 0 auto;
   font-size: 20px;
   color: $c-dark-black;
   text-transform: capitalize;
-  padding: 10px;
+  padding: 13px;
+
+  &.small{
+    padding: 3px;
+    font-size: 15px;
+  }
 }
 
+.selection{
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.information{
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.28;
+
+  &.small{
+    padding: 3px;
+    font-size: 13px;
+    font-style: italic;
+  }
+}
 // ------------ Icon ----------------
 // ----------------------------------
 
 .color-icon{
-  size: content;
-  position: absolute;
-  &.clear{
-    background: url(#/app/$r-clean)
+  position: relative;
+  margin: 0 auto; //centers de object
+  content: url(../img/ea9c1e.jpg);
+
+  &.clean{
+    //@include color-icon-style($r-clean);
+    content: url(../img/f5f3f8.jpg);
+  }
+  &.silver{
+    //@include color-icon-style($r-silver);
+    content: url(../img/eff4f2.jpg);
+  }
+  &.gold{
+    //@include color-icon-style($r-gold);
+    content: url(../img/ea9c1e.jpg);
+  }
+  &.sandy-gold{
+    //@include color-icon-style($r-sandy-gold);
+    content: url(../img/d6ac48.jpg);
+  }
+  &.amber{
+    //@include color-icon-style($r-amber);
+    content: url(../img/ffbf00.jpg);
+  }
+  &.saddle-brown{
+    //@include color-icon-style($r-saddle-brown);
+    content: url(../img/762e06.jpg);
+  }
+  &.firebrick{
+    //@include color-icon-style($r-firebrick);
+    content: url(../img/b21802.jpg);
+  }
+  &.sienna{
+    //@include color-icon-style($r-sienna);
+    content: url(../img/805c44.jpg);
   }
 }
+// ------------ Mixin ---------------
+// ----------------------------------
 
-
+//@mixin color-icon-style($color){
+//  content: url(../img/$color.jpg);
+//}
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;

@@ -43,16 +43,49 @@ $dark:                            #444 !default;
 
 .review {
   text-align: center;
+  margin: 0 auto;
   font-size: 20px;
   color: #282828;
   text-transform: capitalize;
-  padding: 10px; }
+  padding: 13px; }
+  .review.small {
+    padding: 3px;
+    font-size: 15px; }
+
+.selection {
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize; }
+
+.information {
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.28; }
+  .information.small {
+    padding: 3px;
+    font-size: 13px;
+    font-style: italic; }
 
 .color-icon {
-  size: content;
-  position: absolute; }
-  .color-icon.clear {
-    background: url(C://); }
+  position: relative;
+  margin: 0 auto;
+  content: url(../img/ea9c1e.jpg); }
+  .color-icon.clean {
+    content: url(../img/f5f3f8.jpg); }
+  .color-icon.silver {
+    content: url(../img/eff4f2.jpg); }
+  .color-icon.gold {
+    content: url(../img/ea9c1e.jpg); }
+  .color-icon.sandy-gold {
+    content: url(../img/d6ac48.jpg); }
+  .color-icon.amber {
+    content: url(../img/ffbf00.jpg); }
+  .color-icon.saddle-brown {
+    content: url(../img/762e06.jpg); }
+  .color-icon.firebrick {
+    content: url(../img/b21802.jpg); }
+  .color-icon.sienna {
+    content: url(../img/805c44.jpg); }
 
 /*!
   Ionicons, v2.0.1
