@@ -29,7 +29,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/app',
     abstract: true,
     templateUrl: 'templates/settings.html',
-    controller: 'AppCtrl'
+    controller: 'tasteNotecontroller'
   })
 
 
@@ -54,8 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/info',
       views: {
         'menuContent': {
-          templateUrl: 'templates/info.html',
-          controller: 'tasteNotecontroller'
+          templateUrl: 'templates/info.html'
         }
       }
     })
@@ -63,8 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/color',
       views: {
         'menuContent': {
-          templateUrl: 'templates/color.html',
-          controller: 'tasteNotecontroller'
+          templateUrl: 'templates/color.html'
         }
       }
     })
@@ -72,8 +70,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/smell',
       views: {
         'menuContent': {
-          templateUrl: 'templates/smell.html',
-          controller: 'tasteNotecontroller'
+          templateUrl: 'templates/smell.html'
         }
       }
     })
@@ -82,8 +79,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/taste',
       views: {
         'menuContent': {
-          templateUrl: 'templates/taste.html',
-          controller: 'tasteNotecontroller'
+          templateUrl: 'templates/taste.html'
         }
       }
     })
@@ -91,8 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/review',
       views: {
         'menuContent': {
-          templateUrl: 'templates/review.html',
-          controller: 'tasteNotecontroller'
+          templateUrl: 'templates/review.html'
         }
       }
     })
@@ -100,11 +95,20 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/notes',
       views: {
         'menuContent': {
-          templateUrl: 'templates/notes.html'
-          //controler
+          templateUrl: 'templates/notes.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
+    .state('app.discovernotes', {
+     url: '/discovernotes',
+     views: {
+       'menuContent': {
+         templateUrl: 'templates/dicovernotes.html',
+         controller: 'tasteNotecontroller'
+       }
+     }
+   })
 
 
   // if none of the above states are matched, use this as the fallback

@@ -28,6 +28,17 @@ this.getColor = function(callbackFunc) {
          alert("error");
      });
   }
+  this.getNotes = function(callbackFunc) {
+      $http({
+          method: 'GET',
+          url: 'https://rum-backend-db.herokuapp.com/note'
+       }).success(function(data){
+          // With the data succesfully returned, call our callback
+          callbackFunc(data);
+      }).error(function(){
+          alert("error");
+      });
+   }
   this.getTaste = function(callbackFunc) {
       $http({
           method: 'GET',
@@ -54,8 +65,8 @@ this.getColor = function(callbackFunc) {
     }
 });
 
-ctrl.controller('tasteNotecontroller', function($scope, dataService ) {
-
+ctrl.controller('tasteNotecontroller', function($scope, dataService, $http) {
+$scope.note={brand: ''};
     $scope.color = dataService.getColor(function(dataResponse) {
        $scope.color = dataResponse;
 
@@ -84,12 +95,43 @@ ctrl.controller('tasteNotecontroller', function($scope, dataService ) {
     });
     $scope.rum = dataService.getRum(function(dataResponse) {
       $scope.rum = dataResponse;
-
+      $scope.brand=$scope.nonrepeatbrand($scope.rum);
+      $scope.name=$scope.relatedto($scope.rum);
 
     });
+    $scope.notes = dataService.getNotes(function(dataResponse) {
+      $scope.notes = dataResponse;
+    });
+
+    $scope.relatedto=function(word,rum){
+      var array=[];
+      for (var i = 0; i < rum.length; i++) {
+        if(rum[i].brand==word){
+          array.push(rum[i]);
+
+        }
+      }
+      return array;
+    }
+    $scope.nonrepeatbrand=function(rum) {
+      var array2=[];
+      for (var i = 0; i < rum.length; i++) {
+        if(!$scope.repeatword(rum[i].brand,array2)){
+            array2.push(rum[i]);
+      }
+
+    }
+      return array2;
+    }
+    $scope.repeatword=function(word,array) {
+      for (var j = 0; j < array.length; j++) {
+        if(array[j].brand==word){
+          return true;
+        }
+      }
+      return false;
+    }
     $scope.pudge=function(smell,word){
-      console.log(smell);
-      console.log(word);
     var array =[];
       for (var i = 0; i <smell.length; i++) {
         if(smell[i].name==word || smell[i].category==word){
@@ -100,52 +142,39 @@ ctrl.controller('tasteNotecontroller', function($scope, dataService ) {
       return array;
     };
 
+    $scope.getID=function (word,rum) {
+      for (var i = 0; i < rum.length; i++) {
+        if(rum[i].name==word){
+          return rum[i].id
+        }
+      }
+    }
+    $scope.postNote=function (rum,taste,smell,color){
+     var data ={
+        user_id: '1'
+        , rum_id: rum,
+         taste_id: taste ,
+        tastedIntensity: '3',
+         smell_id: smell,
+          smellIntensity: '3',
+           color_id: color
 
-});
-
-
-
-ctrl.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  // Form data for the login modal
-  $scope.loginData = {};
-
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
-
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
-
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
-})
+     };
 
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+
+            $http.post('https://rum-backend-db.herokuapp.com/note', data)
+            .success(function (data, status, headers, config) {
+                $scope.PostDataResponse = data;
+            })
+            .error(function (data, status, header, config) {
+                $scope.ResponseDetails = "Data: " + data +
+                    "<hr />status: " + status +
+                    "<hr />headers: " + header +
+                    "<hr />config: " + config;
+            });
+
+
+    };
+
 });

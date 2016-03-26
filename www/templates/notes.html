@@ -1,38 +1,14 @@
-<ion-view view-title="Smell" style="background-color:#f1cb89">
+<ion-view view-title="My notes" >
   <ion-content>
     <div class="list">
 
-    <a class="item item-thumbnail-left" href="#">
+    <div class="item item-thumbnail-left" ng-repeat="mynot in notes">
       <img src="https://columbiawinecoblog.files.wordpress.com/2015/07/rums.jpg">
-      <h2>Brand,Year</h2>
-      <p>Color:
-      	<br>
-      	smell:
-      	<br>
-      	taste:
-      </p>
-    </a>
-     <a class="item item-thumbnail-left" href="#">
-      <img src="https://columbiawinecoblog.files.wordpress.com/2015/07/rums.jpg">
-      <h2>Brand,Year2</h2>
-      <p>Color:
-      	<br>
-      	smell:
-      	<br>
-      	taste:
-      </p>
-    </a>
-
- <a class="item item-thumbnail-left" href="#">
-      <img src="https://columbiawinecoblog.files.wordpress.com/2015/07/rums.jpg">
-      <h2>Brand,Year3</h2>
-      <p>Color:
-      	<br>
-      	smell:
-      	<br>
-      	taste:
-      </p>
-    </a>
+      <div >Brand: {{rum[mynot.rum_id-1].brand}}</div>
+      <div >Color:{{color[mynot.color_id-1].name}} </div>
+      <div >Smell:{{smell[mynot.smell_id-1].name}}</div>
+      <div >Taste:{{taste[mynot.taste_id-1].name}}</div>
+    </div>
 
 
 
