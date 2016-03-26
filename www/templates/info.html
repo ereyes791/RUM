@@ -1,28 +1,21 @@
-<ion-view view-title="INFORMATION" style="page-light-red">
+<ion-view view-title="INFORMATION">
   <ion-content>
-
-    <div class="list">
-
+<!--Selectors and labels-->
     <label class="item item-input item-select">
-
       <div class="input-label">
-      BRAND
+        BRAND
       </div>
-      <select ng-model="note.brand">
-        <option  ng-repeat="rumName in brand" >{{rumName.brand}}</option>
+      <select class="selection small" ng-model="note.brand">
+        <option ng-repeat="rumName in brand" >{{rumName.brand}}</option>
       </select>
-      </label>
+    </label>
 
     <label class="item item-input item-select">
-
       <div class="input-label">
-      NAME
+          NAME
       </div>
-      <select ng-model="note.rumName" >
+      <select class="selection small" ng-model="note.rumName" >
           <option  ng-repeat="rumName in rum" ng-if='rumName.brand==note.brand' >{{rumName.name}}</option>
-
-
-
       </select>
     </label>
 
@@ -36,16 +29,15 @@
       </select>
     </label>
 
-</div>
-
-<a class="button button-full button-light-brown" href="#/app/color">
+<!--Buttons-->
+<a class="button button-full button-light-orange" href="#/app/color">
   CONTINUE
 </a>
 <a class="button button-full button-light-red" href="#">
   HELP
 </a>
 <a class="button button-full button-light-black" href="#/app/menu">
-    CANCEL NOTE
+  CANCEL NOTE
 </a>
 
   </ion-content>

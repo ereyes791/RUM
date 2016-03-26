@@ -93,7 +93,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 // ----------------------------------
 
 .logo{
-    position: static;
+    position: sticky;
     display: block;
     margin-left: auto;
     margin-right: auto;
