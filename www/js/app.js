@@ -104,7 +104,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
      url: '/discovernotes',
      views: {
        'menuContent': {
-         templateUrl: 'templates/dicovernotes.html',
+         templateUrl: 'templates/discovernotes.html',
          controller: 'tasteNotecontroller'
        }
      }
