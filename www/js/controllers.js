@@ -54,34 +54,45 @@ this.getColor = function(callbackFunc) {
     }
 });
 
-ctrl.controller('tasteNotecontroller', function($scope, dataService) {
-    $scope.smels = '1';
+ctrl.controller('tasteNotecontroller', function($scope, dataService ) {
+
     $scope.color = dataService.getColor(function(dataResponse) {
-        $scope.color = dataResponse;
+       $scope.color = dataResponse;
 
     });
     $scope.smell = dataService.getSmell(function(dataResponse) {
-        $scope.smell = dataResponse;
-        $scope.smells=$scope.purge($scope.smell);
-        console.log($scope.smells);
+      $scope.checked = {word: ''}
+      $scope.itensitySmel= 3;
+      $scope.smell = dataResponse;
+      $scope.smells=$scope.pudge($scope.smell,$scope.checked.word);
+      $scope.refresh=function(){
+        $scope.smells=$scope.pudge($scope.smell,$scope.checked.word);
+      }
+
 
     });
     $scope.taste = dataService.getTaste(function(dataResponse) {
-        $scope.taste = dataResponse;
+      $scope.checked2 = {word: 'sweet'}
+      $scope.itensityTaste= 3;
+      $scope.taste = dataResponse;
+      $scope.tastes=$scope.pudge($scope.taste,$scope.checked2.word);
+      $scope.refresh2=function(){
+        $scope.tastes=$scope.pudge($scope.taste,$scope.checked2.word);
+      }
+
 
     });
     $scope.rum = dataService.getRum(function(dataResponse) {
-        $scope.rum = dataResponse;
+      $scope.rum = dataResponse;
 
 
     });
-    $scope.checked
-    $scope.purge=function(smell){
+    $scope.pudge=function(smell,word){
       console.log(smell);
       console.log(word);
     var array =[];
       for (var i = 0; i <smell.length; i++) {
-        if(smell[i].name==$scope.checked || smell[i].category==$scope.checked){
+        if(smell[i].name==word || smell[i].category==word){
           array.push(smell[i]);
         }
 
