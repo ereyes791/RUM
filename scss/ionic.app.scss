@@ -131,12 +131,11 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 .review{
   text-align: center;
   margin : 0 auto;
-  font-size: 20px;
+  font-size: 15;
   color: $c-dark-black;
   text-transform: capitalize;
-  padding: 13px;
 
-  &.small{
+  &.review-small{
     padding: 3px;
     font-size: 15px;
   }
@@ -146,6 +145,11 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   text-align: center;
   font-size: 30px;
   text-transform: capitalize;
+
+  &.selection-small{
+    padding: 9px;
+    font-size: 17px;
+  }
 }
 
 .information{
@@ -153,7 +157,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   font-size: 20px;
   opacity: 0.28;
 
-  &.small{
+  &.information-small{
     padding: 3px;
     font-size: 13px;
     font-style: italic;

@@ -1,16 +1,13 @@
 <ion-view view-title="My notes" >
   <ion-content>
-    <div class="item item-thumbnail-left" ng-repeat="mynot in notes"><!--remove the item-thumbnail-left if cant fix the images-->
-      <img class"color-icon"/>
-      <div class="review small">{{rum[mynot.rum_id-1].brand}}</div>
-      <div class="review small">{{rum[mynot.rum_id-1].brand}}</div>
-      <div class="review small">{{color[mynot.color_id-1].name}} </div>
-      <div class="review small">{{smell[mynot.smell_id-1].name}}</div>
-      <div class="review small">{{taste[mynot.taste_id-1].name}}</div>
+    <div class="item" ng-repeat="mynot in notes"><!--remove the item-thumbnail-left if cant fix the images-->
+      <div class="review review-small">{{rum[mynot.rum_id-1].brand}}</div>
+      <div class="review review-small">{{rum[mynot.rum_id-1].name}}</div>
+      <div class="review review-small">{{color[mynot.color_id-1].name}} - {{smell[mynot.smell_id-1].name}} - {{taste[mynot.taste_id-1].name}}</div>
     </div>
 
     <a class="button button-full button-light-black" href="#/app/menu">
-      IM PROUD! NOW TAKE ME BACK
+      BEAUTIFUL! NOW TAKE ME BACK
     </a>
   </ion-content>
 </ion-view>

@@ -5,13 +5,13 @@
       <ion-radio class="selection" ng-model="choice2" ng-value="'B'" >Smell</ion-radio>
       <ion-radio class="selection" ng-model="choice3" ng-value="'C'">Taste</ion-radio>
     </ion-list>
-    <label class="item item-input item-select"ng-show="choice!=null || choice2!=null || choice3!=null">
+    <label class="item item-input item-select" ng-show="choice!=null || choice2!=null || choice3!=null">
       <div class="input-label" ng-if="choice!=null">
         <span>
           COLOR
         </span>
         <select ng-model="search">
-          <option ng-repeat="colours in color">{{colours.name}}</option>
+          <option class="selection small" ng-repeat="colours in color">{{colours.name}}</option>
         </select>
       </div>
       <div class="input-label" ng-if="choice2!=null">
@@ -19,7 +19,7 @@
           SMELL
         </span>
         <select  ng-model="search">
-          <option ng-repeat="colours in smell">{{colours.name}}</option>
+          <option class="selection small" ng-repeat="colours in smell">{{colours.name}}</option>
         </select>
       </div>
       <div class="input-label" ng-if="choice3!=null">
@@ -27,11 +27,12 @@
             TASTE
           </span>
           <select ng-model="search">
-            <option ng-repeat="colours in taste">{{colours.name}}</option>
+            <option class="selection small" ng-repeat="colours in taste">{{colours.name}}</option>
           </select>
       </div>
     </label>
 
+<!--Buttons-->
     <a class="button button-full button-light-red" href="#/app/dicovernotes">
         FIND
     </a>
