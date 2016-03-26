@@ -1,5 +1,6 @@
 <ion-view view-title="INFORMATION">
   <ion-content>
+
 <!--Selectors and labels-->
     <label class="item item-input item-select">
       <div class="input-label">
@@ -12,7 +13,7 @@
 
     <label class="item item-input item-select">
       <div class="input-label">
-          NAME
+        NAME
       </div>
       <select class="selection small" ng-model="note.rumName" >
           <option  ng-repeat="rumName in rum" ng-if='rumName.brand==note.brand' >{{rumName.name}}</option>
@@ -20,9 +21,8 @@
     </label>
 
     <label class="item item-input item-select">
-
       <div class="input-label">
-      YEAR
+        YEAR
       </div>
       <select ng-model="note.age">
 
@@ -54,7 +54,7 @@
 <a class="button button-full button-light-orange" href="#/app/color">
   CONTINUE
 </a>
-<a class="button button-full button-light-red" href="#">
+<a class="button button-full button-light-red" href="#/app/help-info">
   HELP
 </a>
 <a class="button button-full button-light-black" href="#/app/menu">
