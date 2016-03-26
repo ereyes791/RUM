@@ -170,6 +170,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   position: relative;
   margin: 0 auto; //centers de object
   content: url(../img/ea9c1e.jpg);
+  opacity: 0.75;
 
   &.clean{
     //@include color-icon-style($r-clean);

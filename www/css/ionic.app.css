@@ -71,7 +71,8 @@ $dark:                            #444 !default;
 .color-icon {
   position: relative;
   margin: 0 auto;
-  content: url(../img/ea9c1e.jpg); }
+  content: url(../img/ea9c1e.jpg);
+  opacity: 0.75; }
   .color-icon.clean {
     content: url(../img/f5f3f8.jpg); }
   .color-icon.silver {
