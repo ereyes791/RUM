@@ -109,6 +109,30 @@ angular.module('starter', ['ionic', 'starter.controllers'])
        }
      }
    })
+   .state('app.help-info', {
+    url: '/help-info',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/help-info.html'
+      }
+    }
+  })
+  .state('app.help-smell', {
+   url: '/help-smell',
+   views: {
+     'menuContent': {
+       templateUrl: 'templates/help-smell.html'
+     }
+   }
+ })
+ .state('app.help-taste', {
+  url: '/help-taste',
+  views: {
+    'menuContent': {
+      templateUrl: 'templates/help-taste.html'
+    }
+  }
+})
 
 
   // if none of the above states are matched, use this as the fallback
