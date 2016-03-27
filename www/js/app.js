@@ -37,7 +37,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/menu',
       views: {
         'menuContent': {
-          templateUrl: 'templates/menu.html'
+          templateUrl: 'templates/menu.html',
+          controller: 'tasteNotecontroller'
         }
       }
     })
@@ -45,8 +46,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/discover",
       views: {
         'menuContent': {
-          templateUrl: "templates/discover.html",
-          controller: 'tasteNotecontroller'
+          templateUrl: "templates/discover.html"
         }
       }
     })
@@ -104,8 +104,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
      url: '/discovernotes',
      views: {
        'menuContent': {
-         templateUrl: 'templates/discovernotes.html',
-         controller: 'tasteNotecontroller'
+         templateUrl: 'templates/discovernotes.html'
        }
      }
    })

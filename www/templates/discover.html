@@ -10,7 +10,7 @@
         <span>
           COLOR
         </span>
-        <select ng-model="search">
+        <select ng-model="search.color">
           <option class="selection small" ng-repeat="colours in color">{{colours.name}}</option>
         </select>
       </div>
@@ -18,7 +18,7 @@
         <span>
           SMELL
         </span>
-        <select  ng-model="search">
+        <select  ng-model="search.smell">
           <option class="selection small" ng-repeat="colours in smell">{{colours.name}}</option>
         </select>
       </div>
@@ -26,14 +26,14 @@
           <span>
             TASTE
           </span>
-          <select ng-model="search">
+          <select ng-model="search.taste">
             <option class="selection small" ng-repeat="colours in taste">{{colours.name}}</option>
           </select>
       </div>
     </label>
 
 <!--Buttons-->
-    <a class="button button-full button-light-red" href="#/app/dicovernotes">
+    <a class="button button-full button-light-red" href="#/app/discovernotes">
         FIND
     </a>
     <a class="button button-full button-light-black" href="#/app/menu">

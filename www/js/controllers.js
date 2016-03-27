@@ -66,6 +66,7 @@ this.getColor = function(callbackFunc) {
 });
 
 ctrl.controller('tasteNotecontroller', function($scope, dataService, $http) {
+  $scope.search={};
 $scope.note={brand: ''};
     $scope.color = dataService.getColor(function(dataResponse) {
        $scope.color = dataResponse;
@@ -143,12 +144,46 @@ $scope.note={brand: ''};
     };
 
     $scope.getID=function (word,rum) {
+      var id = 0;
       for (var i = 0; i < rum.length; i++) {
         if(rum[i].name==word){
-          return rum[i].id
+          id = rum[i].id;
         }
       }
+      return id;
     }
+    $scope.getit=function () {
+    $scope.discover=discover(search,smell,taste,color)
+    }
+    $scope.discover=function(word,smell,taste,notes,color) {
+      var discover=[];
+        var id ;
+      for (var i = 0; i < smell.length; i++) {
+        if(word==smell[i].name){
+        id=smell[i].id;
+        }
+      }
+      for (var j = 0; j < taste.length; j++) {
+        if(word==taste[j].name){
+        id=taste[j].id;
+        }
+      }
+        for (var t = 0; t < color.length; t++) {
+          if(word==color[t].name){
+          id=color[t].id;
+          }
+      }
+    for (var k = 0; k < notes.length; k++) {
+      if(notes[k].smell_id==id || notes[k].taste_id==id|| notes[k].color_id==id ){
+    $scope.discover.push(notes[k]);
+      }
+    }
+  return discover;
+    }
+
+
+
+
     $scope.postNote=function (rum,taste,smell,color){
      var data ={
         user_id: '1'
