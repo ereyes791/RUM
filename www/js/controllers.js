@@ -136,7 +136,15 @@ $scope.note={brand: ''};
     var array =[];
       for (var i = 0; i <smell.length; i++) {
         if(smell[i].name==word || smell[i].category==word){
+          if(smell[i].name==word){
+            for (var j = 0; j < smell.length; j++) {
+              if(smell[j].category==smell[i].category){
+                array.push(smell[j]);
+              }
+            }
+          }else{
           array.push(smell[i]);
+          }
         }
 
       }
