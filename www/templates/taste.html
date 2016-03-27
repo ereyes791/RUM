@@ -8,8 +8,7 @@
         Submit
         </button>
       </div>
-    <ion-radio ng-repeat="test in tastes" ng-value="test.id" ng-model="note.taste">{{test.name}}</ion-radio>
-
+    <ion-radio class="selection" ng-repeat="test in tastes" ng-value="test.id" ng-model="note.taste">{{test.name}}</ion-radio>
 <!-- Intensity bar
     <div class="list">
         <div class="item range range-positive">

@@ -50,12 +50,18 @@ $dark:                            #444 !default;
   .review.review-written {
     font-style: italic;
     text-shadow: 1;
-    text-transform: lowercase; }
+    text-transform: inherit;
+    padding: 5px;
+    line-height: 1.35; }
+  .review.review-emphasis {
+    text-transform: capitalize;
+    font-style: oblique; }
 
 .selection {
   text-align: center;
   font-size: 30px;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  opacity: 0.6; }
   .selection.selection-small {
     padding: 2px;
     font-size: 17px; }
@@ -67,11 +73,11 @@ $dark:                            #444 !default;
   padding: 4px;
   text-overflow: clip; }
   .information.information-small {
-    padding: 2px;
+    padding: 1px;
     font-size: 16px;
     font-style: italic; }
   .information.information-element {
-    padding: 4px;
+    padding: 1px;
     font-family: sans-serif;
     line-height: 1.5; }
 
@@ -87,11 +93,11 @@ $dark:                            #444 !default;
     content: url(../img/eff4f2.jpg); }
   .color-icon.gold {
     content: url(../img/ea9c1e.jpg); }
-  .color-icon.sandy-gold {
+  .color-icon.sandy {
     content: url(../img/d6ac48.jpg); }
   .color-icon.amber {
     content: url(../img/ffbf00.jpg); }
-  .color-icon.saddle-brown {
+  .color-icon.saddle {
     content: url(../img/762e06.jpg); }
   .color-icon.firebrick {
     content: url(../img/b21802.jpg); }
@@ -103,9 +109,17 @@ $dark:                            #444 !default;
   margin: 0 auto;
   padding: 7px; }
   .image-instruction.information {
-    content: url(../img/help-info.jpg); }
+    content: url(../img/help-info.jpg);
+    opacity: 0.95; }
   .image-instruction.color {
-    content: url(../img/help-color.png); }
+    content: url(../img/help-color.png);
+    opacity: 0.8; }
+  .image-instruction.taste {
+    content: url(../img/help-taste.jpg);
+    opacity: 0.8; }
+  .image-instruction.smell {
+    content: url(../img/help-smell.jpg);
+    opacity: 0.8; }
 
 /*!
   Ionicons, v2.0.1

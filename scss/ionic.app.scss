@@ -138,7 +138,14 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   &.review-written{
     font-style: italic;
     text-shadow: 1;
-    text-transform: lowercase;
+    text-transform: inherit;
+    padding: 5px;
+    line-height: 1.35;
+  }
+
+  &.review-emphasis{
+    text-transform: capitalize;
+    font-style: oblique;
   }
 }
 
@@ -146,6 +153,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   text-align: center;
   font-size: 30px;
   text-transform: capitalize;
+  opacity: 0.6;
 
   &.selection-small{
     padding: 2px;
@@ -161,13 +169,13 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   text-overflow: clip;
 
   &.information-small{
-    padding: 2px;
+    padding: 1px;
     font-size: 16px;
     font-style: italic;
   }
 
   &.information-element{
-    padding: 4px;
+    padding: 1px;
     font-family:  sans-serif;
     line-height: 1.5;
   }
@@ -195,7 +203,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
     //@include color-icon-style($r-gold);
     content: url(../img/ea9c1e.jpg);
   }
-  &.sandy-gold{
+  &.sandy{ //supposed to be sangy-gold but had some problems with the lecture at COLOR
     //@include color-icon-style($r-sandy-gold);
     content: url(../img/d6ac48.jpg);
   }
@@ -203,7 +211,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
     //@include color-icon-style($r-amber);
     content: url(../img/ffbf00.jpg);
   }
-  &.saddle-brown{
+  &.saddle{ //supposed to be saddle-brown but had some problems with the lecture at COLOR
     //@include color-icon-style($r-saddle-brown);
     content: url(../img/762e06.jpg);
   }
@@ -227,13 +235,23 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 
   &.information{
       content: url(../img/help-info.jpg);
+      opacity: 0.95;
   }
 
   &.color{
       content: url(../img/help-color.png);
+      opacity: 0.8;
   }
 
+  &.taste{
+      content: url(../img/help-taste.jpg);
+      opacity: 0.8;
+  }
 
+  &.smell{
+      content: url(../img/help-smell.jpg);
+      opacity: 0.8;
+  }
 
 }
 

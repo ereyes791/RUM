@@ -4,13 +4,14 @@
         <div class="review">Name: {{note.rumName}}</div>
         <div class="review">Year: {{note.age}}</div>
         <div class="review">Color: {{color[note.color-1].name}}</div>
-        <div class="color-icon {{test.name}}"></div> <!--Change the color to show the selected-->
+        <div class="color-icon {{color[note.color-1].name}}"></div> <!--Change the color to show the selected-->
         <div class="review">Smell: {{smell[note.smell-1].name}}</div>
         <div class="review">Taste: {{taste[note.taste-1].name}}</div>
+      <br></br>
         <div class="review review-written">
-          The {{note.rumName}}, from Brand's rum house is a {{note.type}} rum, made in {{note.age}}.
-          One can notice a beautiful {{color[note.color-1].name}} color, strong notes of {{smell[note.smell-1].name}} on the nose and
-          taste of {{taste[note.taste-1].name}} when drank.
+          The <b class="review review-emphasis">{{note.rumName}}</b>, from <b class="review review-emphasis">{{note.brand}}'s</b> rum house is a {{note.type}} rum, made in {{note.age}}.</b>
+          One can notice a beautiful <b>{{color[note.color-1].name}}</b> color, strong notes of <b>{{smell[note.smell-1].name}}</b> on the nose and
+          taste of <b>{{taste[note.taste-1].name}}</b> when drank.
         </div>
 <!--Buttons-->
 <a class="button button-full button-light-red" href="#saas" ng-click="postNote(getID(note.rumName,rum),note.taste,note.smell,note.color)">
