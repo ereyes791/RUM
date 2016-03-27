@@ -35,8 +35,6 @@ $r-amber:                         #ffbf00 !default;
 $r-saddle-brown:                  #762e06 !default;
 $r-firebrick:                     #b21802 !default;
 $r-sienna:                        #805c44 !default;
-
-
 // ------------ Button --------------
 // ----------------------------------
 
@@ -127,13 +125,20 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 .review{
   text-align: center;
   margin : 0 auto;
-  font-size: 15;
+  font-size: 18px;
   color: $c-dark-black;
   text-transform: capitalize;
+  padding: 3px;
 
   &.review-small{
-    padding: 3px;
+    padding: 2px;
     font-size: 15px;
+  }
+
+  &.review-written{
+    font-style: italic;
+    text-shadow: 1;
+    text-transform: lowercase;
   }
 }
 
@@ -143,7 +148,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   text-transform: capitalize;
 
   &.selection-small{
-    padding: 9px;
+    padding: 2px;
     font-size: 17px;
   }
 }
@@ -153,6 +158,7 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
   font-size: 20px;
   opacity: 0.70;
   padding: 4px;
+  text-overflow: clip;
 
   &.information-small{
     padding: 2px;
@@ -171,14 +177,15 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 // ----------------------------------
 
 .color-icon{
-  position: relative;
+  position: inherit;
   margin: 0 auto; //centers de object
-  content: url(../img/ea9c1e.jpg);
-  opacity: 0.75;
+  content: url(../img/f5f3f8.jpg);
+  opacity: 0.95;
 
   &.clean{
     //@include color-icon-style($r-clean);
     content: url(../img/f5f3f8.jpg);
+    position:relative;
   }
   &.silver{
     //@include color-icon-style($r-silver);
@@ -216,8 +223,17 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 .image-instruction{
   position: relative;
   margin: 0 auto;
-  content: url(../img/help-info.jpg);
   padding: 7px;
+
+  &.information{
+      content: url(../img/help-info.jpg);
+  }
+
+  &.color{
+      content: url(../img/help-color.png);
+  }
+
+
 
 }
 

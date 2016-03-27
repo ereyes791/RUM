@@ -40,26 +40,32 @@ $dark:                            #444 !default;
 .review {
   text-align: center;
   margin: 0 auto;
-  font-size: 15;
+  font-size: 18px;
   color: #282828;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  padding: 3px; }
   .review.review-small {
-    padding: 3px;
+    padding: 2px;
     font-size: 15px; }
+  .review.review-written {
+    font-style: italic;
+    text-shadow: 1;
+    text-transform: lowercase; }
 
 .selection {
   text-align: center;
   font-size: 30px;
   text-transform: capitalize; }
   .selection.selection-small {
-    padding: 9px;
+    padding: 2px;
     font-size: 17px; }
 
 .information {
   text-align: center;
   font-size: 20px;
   opacity: 0.70;
-  padding: 4px; }
+  padding: 4px;
+  text-overflow: clip; }
   .information.information-small {
     padding: 2px;
     font-size: 16px;
@@ -70,12 +76,13 @@ $dark:                            #444 !default;
     line-height: 1.5; }
 
 .color-icon {
-  position: relative;
+  position: inherit;
   margin: 0 auto;
-  content: url(../img/ea9c1e.jpg);
-  opacity: 0.75; }
+  content: url(../img/f5f3f8.jpg);
+  opacity: 0.95; }
   .color-icon.clean {
-    content: url(../img/f5f3f8.jpg); }
+    content: url(../img/f5f3f8.jpg);
+    position: relative; }
   .color-icon.silver {
     content: url(../img/eff4f2.jpg); }
   .color-icon.gold {
@@ -94,8 +101,11 @@ $dark:                            #444 !default;
 .image-instruction {
   position: relative;
   margin: 0 auto;
-  content: url(../img/help-info.jpg);
   padding: 7px; }
+  .image-instruction.information {
+    content: url(../img/help-info.jpg); }
+  .image-instruction.color {
+    content: url(../img/help-color.png); }
 
 /*!
   Ionicons, v2.0.1
