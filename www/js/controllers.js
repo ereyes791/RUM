@@ -83,7 +83,7 @@ $scope.note={brand: ''};
 
     });
     $scope.taste = dataService.getTaste(function(dataResponse) {
-      $scope.checked2 = {word: 'sweet'}
+      $scope.checked2 = {word: ''}
       $scope.itensityTaste= 3;
       $scope.taste = dataResponse;
       $scope.tastes=$scope.pudge($scope.taste,$scope.checked2.word);
