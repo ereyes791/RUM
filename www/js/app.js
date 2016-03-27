@@ -132,6 +132,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   }
 })
+.state('app.help-color', {
+ url: '/help-color',
+ views: {
+   'menuContent': {
+     templateUrl: 'templates/help-color.html'
+   }
+ }
+})
 
 
   // if none of the above states are matched, use this as the fallback
