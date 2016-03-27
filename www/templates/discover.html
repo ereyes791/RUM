@@ -1,9 +1,9 @@
 <ion-view view-title="DISCOVER">
   <ion-content class="has-header">
     <ion-list ng-hide="choice!=null || choice2!=null || choice3!=null">
-      <ion-radio class="selection" ng-model="choice" ng-value="'A'">Color</ion-radio>
-      <ion-radio class="selection" ng-model="choice2" ng-value="'B'" >Smell</ion-radio>
-      <ion-radio class="selection" ng-model="choice3" ng-value="'C'">Taste</ion-radio>
+      <ion-radio class="selection" ng-model="choice" ng-value="'A'">COLOR</ion-radio>
+      <ion-radio class="selection" ng-model="choice2" ng-value="'B'" >SMELL</ion-radio>
+      <ion-radio class="selection" ng-model="choice3" ng-value="'C'">TASTE</ion-radio>
     </ion-list>
     <label class="item item-input item-select" ng-show="choice!=null || choice2!=null || choice3!=null">
       <div class="input-label" ng-if="choice!=null">
@@ -11,7 +11,7 @@
           COLOR
         </span>
         <select ng-model="search.color">
-          <option class="selection small" ng-repeat="colours in color">{{colours.name}}</option>
+          <option class="selection selection-small" ng-repeat="colours in color">{{colours.name}}</option>
         </select>
       </div>
       <div class="input-label" ng-if="choice2!=null">
@@ -19,7 +19,7 @@
           SMELL
         </span>
         <select  ng-model="search.smell">
-          <option class="selection small" ng-repeat="colours in smell">{{colours.name}}</option>
+          <option class="selection selection-small" ng-repeat="colours in smell">{{colours.name}}</option>
         </select>
       </div>
       <div class="input-label" ng-if="choice3!=null">
@@ -27,7 +27,7 @@
             TASTE
           </span>
           <select ng-model="search.taste">
-            <option class="selection small" ng-repeat="colours in taste">{{colours.name}}</option>
+            <option class="selection selection-small" ng-repeat="colours in taste">{{colours.name}}</option>
           </select>
       </div>
     </label>
