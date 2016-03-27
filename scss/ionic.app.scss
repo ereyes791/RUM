@@ -107,22 +107,18 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 // ----------------------------------
 .page-light-red{
     background-color: $c-light-red;
-    background: $c-light-red;
 }
 
 .page-light-orange{
   background-color: $c-light-orange;
-  background: $c-light-orange;
 }
 
 .page-light-black{
   background-color: $c-light-black;
-  background: $c-light-black;
 }
 
 .page-light-brown{
   background-color: $c-light-brown;
-  background: $c-light-brown;
 }
 
 // ------------ Text ----------------
@@ -155,14 +151,22 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
 .information{
   text-align: center;
   font-size: 20px;
-  opacity: 0.28;
+  opacity: 0.70;
+  padding: 4px;
 
   &.information-small{
-    padding: 3px;
-    font-size: 13px;
+    padding: 2px;
+    font-size: 16px;
     font-style: italic;
   }
+
+  &.information-element{
+    padding: 4px;
+    font-family:  sans-serif;
+    line-height: 1.5;
+  }
 }
+
 // ------------ Icon ----------------
 // ----------------------------------
 
@@ -205,6 +209,18 @@ $button-dark-orange-active-border:darken($c-dark-orange, 10%) !default;
     content: url(../img/805c44.jpg);
   }
 }
+
+// ------------ Image ---------------
+// ----------------------------------
+
+.image-instruction{
+  position: relative;
+  margin: 0 auto;
+  content: url(../img/help-info.jpg);
+  padding: 7px;
+
+}
+
 // ------------ Mixin ---------------
 // ----------------------------------
 

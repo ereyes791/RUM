@@ -26,20 +26,16 @@ $dark:                            #444 !default;
   height: 50%; }
 
 .page-light-red {
-  background-color: #e67f76;
-  background: #e67f76; }
+  background-color: #e67f76; }
 
 .page-light-orange {
-  background-color: #ecbf85;
-  background: #ecbf85; }
+  background-color: #ecbf85; }
 
 .page-light-black {
-  background-color: #797474;
-  background: #797474; }
+  background-color: #797474; }
 
 .page-light-brown {
-  background-color: #d9c27c;
-  background: #d9c27c; }
+  background-color: #d9c27c; }
 
 .review {
   text-align: center;
@@ -62,11 +58,16 @@ $dark:                            #444 !default;
 .information {
   text-align: center;
   font-size: 20px;
-  opacity: 0.28; }
+  opacity: 0.70;
+  padding: 4px; }
   .information.information-small {
-    padding: 3px;
-    font-size: 13px;
+    padding: 2px;
+    font-size: 16px;
     font-style: italic; }
+  .information.information-element {
+    padding: 4px;
+    font-family: sans-serif;
+    line-height: 1.5; }
 
 .color-icon {
   position: relative;
@@ -89,6 +90,12 @@ $dark:                            #444 !default;
     content: url(../img/b21802.jpg); }
   .color-icon.sienna {
     content: url(../img/805c44.jpg); }
+
+.image-instruction {
+  position: relative;
+  margin: 0 auto;
+  content: url(../img/help-info.jpg);
+  padding: 7px; }
 
 /*!
   Ionicons, v2.0.1
